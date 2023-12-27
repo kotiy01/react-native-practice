@@ -2,7 +2,8 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import TabNavigator from './TabNavigator';
-import { BooksStackNavigator, FilmsStackNavigator } from './StackNavigator';
+import { BooksStackNavigator } from './StackNavigator';
+import { FilmsNativeStackNavigator } from './NativeStackNavigator';
 
 const Drawer = createDrawerNavigator();
 
@@ -17,7 +18,7 @@ const DrawerNavigator = () => {
         }}>
             <Drawer.Screen name='Меню' component={TabNavigator} />
             <Drawer.Screen name='Книги' component={BooksStackNavigator} />
-            <Drawer.Screen name='Фильмы' component={FilmsStackNavigator} />
+            <Drawer.Screen name='Фильмы' component={FilmsNativeStackNavigator} />
         </Drawer.Navigator>
     );
 };
