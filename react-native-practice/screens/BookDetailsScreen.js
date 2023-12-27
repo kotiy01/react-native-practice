@@ -124,16 +124,16 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   button: {
-    width: '60%',
-    height: 48,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#00ADB5',
-    borderRadius: 4,
-    marginLeft: '20%',
-    marginTop: 20,
-    marginBottom: 60,
+    width: '60%', // ширина 60% от scroll
+    height: 48, // высота 48px
+    display: 'flex', // создание флексбокса
+    justifyContent: 'center', // элементы выравниваются по вертикали по центру
+    alignItems: 'center', // элементы выравниваются по горизонтали по центру
+    backgroundColor: '#00ADB5', // фоновый цвет
+    borderRadius: 4, // закругленность углов рамки
+    marginLeft: '20%', // отступ слева 20%
+    marginTop: 20, // отступ сверху 20px
+    marginBottom: 60, // отступ снизу 60px, чтобы кнопка не была в самом низу экрана или не уходила снизу за границы
   },
   btnText: {
     fontSize: 18,

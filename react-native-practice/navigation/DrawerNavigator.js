@@ -11,10 +11,10 @@ const DrawerNavigator = () => {
     return (
         <Drawer.Navigator 
             screenOptions={{ 
-            drawerStyle: { backgroundColor: '#222831' },
-            drawerActiveBackgroundColor: '#00ADB5',
-            drawerActiveTintColor: '#EEEEEE',
-            drawerInactiveTintColor: '#EEEEEE',
+            drawerStyle: { backgroundColor: '#222831' }, // фоновый цвет бокового меню
+            drawerActiveBackgroundColor: '#00ADB5', // фоновый цвет выбранной ссылки
+            drawerActiveTintColor: '#EEEEEE', // цвет шрифта выбранной страницы
+            drawerInactiveTintColor: '#EEEEEE', // цвет шрифта невыбранных страниц
         }}>
             <Drawer.Screen name='Меню' component={TabNavigator} />
             <Drawer.Screen name='Книги' component={BooksStackNavigator} />

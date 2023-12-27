@@ -59,52 +59,52 @@ const BooksScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    backgroundColor: '#222831',
+    width: '100%', // ширина контейнера 100% от ширины экрана
+    flex: 1, // контейнер занимает все доступное пространство
+    flexDirection: 'column', // направление, по которому выстраиваются элементы, в данном случае в колонку
+    justifyContent: 'flex-start', // элементы выравниваются по вертикали сначала
+    alignItems: 'center', // элементы выстраиваются по горизонтали по центру
+    backgroundColor: '#222831', // фоновый цвет
   },
   scroll: {
-    width: '100%',
-    backgroundColor: '#222831',
-    paddingTop: 22,
-    paddingBottom: 22,
+    width: '100%', // ширина 100% от контейнера
+    backgroundColor: '#222831', // фоновый цвет
+    paddingTop: 22, // внутренний отступ сверху 22px
+    paddingBottom: 22, // внутренний отступ снизу 22px
   },
   card: {
-    width: '90%',
-    height: 220,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
-    backgroundColor: '#393E46',
-    marginBottom: 22,
-    marginLeft: '5%',
+    width: '90%', // ширина карточки 90% от scroll
+    height: 220, // высота карточки 220px
+    display: 'flex', // создание флексбокса
+    flexDirection: 'row', // направление, по которому выстраиваются элементы, в данном случае в ряд
+    justifyContent: 'flex-start', // элементы выравниваются по вертикали сначала
+    alignItems: 'flex-start', // элементы выравниваются по горизонтали сначала
+    backgroundColor: '#393E46', // фоновый цвет
+    marginBottom: 22, // отступ снизу 22px
+    marginLeft: '5%', // отступ слева 5% (из-за того, что ScrollView не может быть флексбоксом, то, чтобы разместить карточку шириной 90% по центру, можно отступить слева 5%, справа от карточки отже останется отступ 5%)
   },
   textBlock: {
-    display: 'flex',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    flexDirection: 'column',
+    display: 'flex', // создание флексбокса
+    alignItems: 'flex-start', // элементы выравниваются по горизонтали сначала
+    justifyContent: 'flex-start', // элементы выравниваются по вертикали сначала
+    flexDirection: 'column', // направление, по которому выстраиваются элементы, в данном случае в колонку
   },
   image: {
-    height: 220,
-    width: 130,
-    resizeMode: 'cover',
+    height: 220, // высота изображения 220px
+    width: 130, // ширина изображения 130px
+    resizeMode: 'cover', // масштабируем изображение так, чтобы оно полностью занимало пространство 220*130px, при этом сохранив соотношение сторон (изображение изначально обрезается из-за неправильного соотношения сторон)
   },
   cardTitle: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    color: '#EEEEEE',
-    padding: 12,
+    fontSize: 22, // размер шрифта 22px
+    fontWeight: 'bold', // жирность шрифта
+    color: '#EEEEEE', // цвет шрифта
+    padding: 12, // внутренние отступы со всех сторон 12px
   },
   cardText: {
-    fontSize: 16,
-    color: '#EEEEEE',
-    paddingLeft: 12,
-    marginBottom: 12,
+    fontSize: 16, // размер шрифта 16px
+    color: '#EEEEEE', // цвет шрифта
+    paddingLeft: 12, // внутренний отступ слева 12px
+    marginBottom: 12, // отступ снизу 12px
   },
 });
 
