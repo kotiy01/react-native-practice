@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import BooksScreen from '../screens/BooksScreen';
+import BooksScreen from '../screens/BookScreen';
 import BookDetailsScreen from '../screens/BookDetailsScreen';
 
 const Stack = createStackNavigator();

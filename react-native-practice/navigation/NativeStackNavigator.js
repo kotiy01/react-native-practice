@@ -1,7 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import FilmsScreen from '../screens/FilmsScreen';
+import FilmsScreen from '../screens/FilmScreen';
 import FilmDetailScreen from '../screens/FilmDetailsScreen';
 
 const NativeStack = createNativeStackNavigator();

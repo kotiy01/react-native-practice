@@ -19,9 +19,9 @@ const ProfileScreen = () => {
                     <Text style={styles.login}>{userInfo.login}</Text>
                 </View>
                 <Text style={styles.statsTitle}>Ваши рецензии на книги</Text>
-                <Text style={styles.statsText}>Раздел в разработке</Text>
+                <Text style={styles.statsText}>Тут пока пусто...</Text>
                 <Text style={styles.statsTitle}>Ваши рецензии на фильмы</Text>
-                <Text style={styles.statsText}>Раздел в разработке</Text>
+                <Text style={styles.statsText}>Тут пока пусто...</Text>
             </View>
         </View>
     );
